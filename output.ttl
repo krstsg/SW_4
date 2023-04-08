@@ -1,0 +1,98 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://comfy.ua/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sch:Product a rdfs:Class ;
+    rdfs:label "Product" .
+
+sch:Laptop rdfs:label "Laptop" ;
+    rdfs:subClassOf sch:Product .
+
+sch:Refrigerator rdfs:label "Refrigerator" ;
+    rdfs:subClassOf sch:Product .
+
+sch:Smartphone rdfs:label "Smartphone" ;
+    rdfs:subClassOf sch:Product .
+
+sch:TV rdfs:label "TV" ;
+    rdfs:subClassOf sch:Product .
+
+sch:Washing_machine rdfs:label "Washing_machine" ;
+    rdfs:subClassOf sch:Product .
+
+sch:currency a rdfs:Property ;
+    rdfs:label "Currency" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:string .
+
+sch:discount a rdfs:Property ;
+    rdfs:label "Discount" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:string .
+
+sch:price_new a rdfs:Property ;
+    rdfs:label "Price_new" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:deciaml .
+
+sch:price_old a rdfs:Property ;
+    rdfs:label "Price_old" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:deciaml .
+
+sch:rating a rdfs:Property ;
+    rdfs:label "Rating" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:deciaml .
+
+sch:review_count a rdfs:Property ;
+    rdfs:label "Review_count" ;
+    rdfs:domain sch:Product ;
+    rdfs:subPropertyOf xsd:integer .
+
+<https://comfy.ua/ua/holodil-nik-samsung-rb38t676fb1-ua.html> a sch:Refrigerator ;
+    dc:title "Холодильник Samsung RB38T676FB1/UA"^^xsd:string ;
+    sch:currency "₴"^^xsd:string ;
+    sch:discount "-9%"^^xsd:string ;
+    sch:price_new 29199 ;
+    sch:price_old 26499 ;
+    sch:rating "4.9"^^xsd:deciaml ;
+    sch:review_count 147 .
+
+<https://comfy.ua/ua/noutbuk-hp-250-g8-45s01es-silver.html> a sch:Laptop ;
+    dc:title "Ноутбук HP 250 G8 (45S01ES) Silver"^^xsd:string ;
+    sch:currency "₴"^^xsd:string ;
+    sch:discount "-22%"^^xsd:string ;
+    sch:price_new 17999 ;
+    sch:price_old 13999 ;
+    sch:rating "4.7"^^xsd:deciaml ;
+    sch:review_count 27 .
+
+<https://comfy.ua/ua/smartfon-samsung-galaxy-m33-5g-6-128gb-green-sm-m336bzggsek.html> a sch:Smartphone ;
+    dc:title "Смартфон Samsung Galaxy M33 5G 6/128Gb Green (SM-M336BZGGSEK)"^^xsd:string ;
+    sch:currency "₴"^^xsd:string ;
+    sch:discount "-11%"^^xsd:string ;
+    sch:price_new 9499 ;
+    sch:price_old 8499 ;
+    sch:rating "4.8"^^xsd:deciaml ;
+    sch:review_count 331 .
+
+<https://comfy.ua/ua/stiral-naja-mashina-whirlpool-wrbsb-6228-b-ua.html> a sch:Washing_machine ;
+    dc:title "Пральна машина Whirlpool WRBSB 6228 B UA"^^xsd:string ;
+    sch:currency "₴"^^xsd:string ;
+    sch:discount "-15%"^^xsd:string ;
+    sch:price_new 15899 ;
+    sch:price_old 13555 ;
+    sch:rating "4.9"^^xsd:deciaml ;
+    sch:review_count 118 .
+
+<https://comfy.ua/ua/televizor-samsung-ue43bu8000uxua.html> a sch:TV ;
+    dc:title "Телевізор Samsung UE43BU8000UXUA"^^xsd:string ;
+    sch:currency "₴"^^xsd:string ;
+    sch:discount "-7%"^^xsd:string ;
+    sch:price_new 20399 ;
+    sch:price_old 18999 ;
+    sch:rating "4.7"^^xsd:deciaml ;
+    sch:review_count 54 .
+

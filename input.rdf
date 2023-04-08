@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sch="https://comfy.ua/schema#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <rdf:Description rdf:ID="Product">
+        <rdfs:label>Product</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Smartphone">
+        <rdfs:label>Smartphone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="TV">
+        <rdfs:label>TV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Washing_machine">
+        <rdfs:label>Washing_machine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Refrigerator">
+        <rdfs:label>Refrigerator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Laptop">
+        <rdfs:label>Laptop</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+
+
+    <rdfs:Property rdf:ID="rating">
+        <rdfs:label>Rating</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="review_count">
+        <rdfs:label>Review_count</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="price_new">
+        <rdfs:label>Price_new</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="price_old">
+        <rdfs:label>Price_old</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="currency">
+        <rdfs:label>Currency</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="discount">
+        <rdfs:label>Discount</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdfs:Property>
+
+
+
+    <rdf:Description rdf:about="https://comfy.ua/ua/noutbuk-hp-250-g8-45s01es-silver.html">
+        <rdf:type rdf:resource="https://comfy.ua/schema#Laptop"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ноутбук HP 250 G8 (45S01ES) Silver</dc:title>
+        <sch:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#deciaml">4.7</sch:rating>
+        <sch:review_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</sch:review_count>
+        <sch:price_new rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17999</sch:price_new>
+        <sch:price_old rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13999</sch:price_old>
+        <sch:currency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">₴</sch:currency>
+        <sch:discount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-22%</sch:discount>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://comfy.ua/ua/smartfon-samsung-galaxy-m33-5g-6-128gb-green-sm-m336bzggsek.html">
+        <rdf:type rdf:resource="https://comfy.ua/schema#Smartphone"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Смартфон Samsung Galaxy M33 5G 6/128Gb Green (SM-M336BZGGSEK)</dc:title>
+        <sch:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#deciaml">4.8</sch:rating>
+        <sch:review_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">331</sch:review_count>
+        <sch:price_new rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9499</sch:price_new>
+        <sch:price_old rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8499</sch:price_old>
+        <sch:currency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">₴</sch:currency>
+        <sch:discount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-11%</sch:discount>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://comfy.ua/ua/holodil-nik-samsung-rb38t676fb1-ua.html">
+        <rdf:type rdf:resource="https://comfy.ua/schema#Refrigerator"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Холодильник Samsung RB38T676FB1/UA</dc:title>
+        <sch:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#deciaml">4.9</sch:rating>
+        <sch:review_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">147</sch:review_count>
+        <sch:price_new rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29199</sch:price_new>
+        <sch:price_old rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26499</sch:price_old>
+        <sch:currency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">₴</sch:currency>
+        <sch:discount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-9%</sch:discount>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://comfy.ua/ua/televizor-samsung-ue43bu8000uxua.html">
+        <rdf:type rdf:resource="https://comfy.ua/schema#TV"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Телевізор Samsung UE43BU8000UXUA</dc:title>
+        <sch:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#deciaml">4.7</sch:rating>
+        <sch:review_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</sch:review_count>
+        <sch:price_new rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20399</sch:price_new>
+        <sch:price_old rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18999</sch:price_old>
+        <sch:currency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">₴</sch:currency>
+        <sch:discount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-7%</sch:discount>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://comfy.ua/ua/stiral-naja-mashina-whirlpool-wrbsb-6228-b-ua.html">
+        <rdf:type rdf:resource="https://comfy.ua/schema#Washing_machine"/>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пральна машина Whirlpool WRBSB 6228 B UA</dc:title>
+        <sch:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#deciaml">4.9</sch:rating>
+        <sch:review_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</sch:review_count>
+        <sch:price_new rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15899</sch:price_new>
+        <sch:price_old rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13555</sch:price_old>
+        <sch:currency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">₴</sch:currency>
+        <sch:discount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-15%</sch:discount>
+    </rdf:Description>
+</rdf:RDF>
